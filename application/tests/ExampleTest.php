@@ -26,28 +26,4 @@ class ExampleTest extends CITestCase
     {
          $this->assertFalse(valid_email('test#testcom'));
     }
-
-    public function testLoadModel()
-    {
-        $this->CI->load->model("users_model");
-        $this->assertInstanceOf('CI_Model', $this->CI->users_model, 'Model was loaded correctly');
-
-        $table = $this->CI->users_model->getTable();
-        $this->assertEquals("users", $table);
-    }
-
-    public function testLoadLibrary()
-    {
-        $this->CI->load->library("User_serv");
-        $this->assertEquals('object', gettype($this->CI->user_serv), 'Library was loaded correctly');
-
-    }
-
-    public function testUserServGetProfile()
-    {
-        $this->CI->load->library("User_serv");
-        $user = $this->CI->user_serv->getProfile(1);
-        $this->assertArrayHasKey("id", $user);
-        $this->assertArrayHasKey("adj_code", $user);
-    }
 }

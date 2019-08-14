@@ -11,8 +11,9 @@
         "source": "https://github.com/bcit-ci/CodeIgniter"
     },
     "require": {
-        "php": ">=5.2.4",
-        "php-curl-class/php-curl-class": "^7.2"
+        "php": ">=7.1",
+        "php-curl-class/php-curl-class": "^7.2",
+        "ezyang/htmlpurifier": "^4.10"
     },
     "suggest": {
         "paragonie/random_compat": "Provides better randomness in PHP 5.x"

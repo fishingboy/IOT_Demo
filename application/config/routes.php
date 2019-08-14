@@ -49,67 +49,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'home';
+if (defined("PHPUNIT_TEST")) {
+    $route['default_controller'] = 'phpunit';
+} else {
+    $route['default_controller'] = 'home';
+}
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-$route['api_dev/article/(:num)'] = 'api_dev/article/index/$1';
-$route['api/article/(:num)'] = "api/article/index/$1";
-$route['api/article/(:num)'] = "api/article/index/$1";
-
-$route['api_dev/article/(:num)/reply'] = 'api_dev/article/reply/$1';
-$route['api/article/(:num)/reply'] = 'api/article/reply/$1';
-$route['api/reply/(:num)'] = "api/reply/index/$1";
-$route['api_dev/user/(:num)/article'] = 'api_dev/user/article/$1';
-$route['api/user/(:num)/article'] = 'api/user/article/$1';
-$route['api/user/(:num)/introArticle'] = 'api/user/introArticle/$1';
-$route['api_dev/user/(:num)/favorite_article'] = 'api_dev/user/favorite_article/$1';
-$route['api/user/(:num)/favorite_article'] = 'api/user/favorite_article/$1';
-
-$route['api/article/(:num)/abstract'] = "api/article/abstract/$1";
-
-$route['api/notify/(:num)/mark_readed'] = "api/notify/mark_readed/$1";
-
-$route['api_dev/channel/(:num)/message'] = "api_dev/channel/message/$1";
-
-$route['api/channel/(:num)/message'] = "api/channel/message/$1";
-$route['api/v2/channel/(:num)/message'] = "api/v2/channel/message/$1";
-
-$route['api/channel/(:num)/message_review'] = "api/channel/message_review/$1";
-
-$route['api_dev/channel/(:num)'] = "api_dev/channel/index/$1";
-$route['api/channel/(:num)'] = "api/channel/index/$1";
-
-$route['api_dev/channel/(:num)/read'] = "api_dev/channel/read/$1";
-$route['api/channel/(:num)/read'] = "api/channel/read/$1";
-$route['api/channel/(:num)/left_match'] = "api/channel/left_match/$1";
-$route['api/channel/(:num)/setNotify'] = "api/channel/setNotify/$1";
-
-$route['api/campaign/(:num)/evaluation'] = "api/campaign/evaluation/$1";
-$route['api/campaign/(:num)/evaluation_answer'] = "api/campaign/evaluation_answer/$1";
-$route['api/campaign/(:num)/signup'] = "api/campaign/signup/$1";
-
-$route['api/match/(:num)'] = 'api/match/index/$1';
-$route['api/friend_request/(:num)/(:num)'] = 'api/friend_request/index/$1/$2';
-$route['api/user/(:num)/unlockArea/(:num)'] = 'api/user/unlockArea/$1/$2';
-$route['api/user/(:num)/area/(:num)'] = 'api/user/area/$1/$2';
-$route['api/user/(:num)/areas'] = 'api/user/areas/$1';
-$route['api/area/(:num)'] = 'api/area/index/$1';
-$route['api/user/(:num)/unban'] = 'api/user/unban/$1';
-$route['api/user/(:num)/is_bucket'] = 'api/user/is_bucket/$1';
-
-/* chatbot */
-$route['api/chatbot/message/push'] = 'api/chatbot/message_push';
-//$route['api/chatbot_menu/(:num)/button'] = 'api/chatbot_menu/button/$1';
-//$route['api/chatbot_menu/(:num)/button/(:num)/response'] = 'api/chatbot_menu/response/$1/$2';
-
-$route['api/intro/(:num)'] = 'api/intro/index/$1';
-
-
-/**
- * 解不明原因打到 api/AAAAAAAAA 的 bug ，之後要拿掉
- * @author Leo.Kuo
- */ 
-$route['api/AAAAAAAAAA/index'] = "api/article/index";
-$route['api/AAAAAAAAAA'] = "api/article/index";
-
-
