@@ -1,0 +1,16 @@
+*.DS_Store
+/application/config/database.php
+/application/controllers/tests
+.sass-cache
+git.pull
+git.log
+/node_modules
+.idea/*
+application/logs/*.php
+application/logs/*.log
+application/cache/*
+vendor
+*.swp
+environment.php
+/composer.phar
+/application/tests/tmp/*
