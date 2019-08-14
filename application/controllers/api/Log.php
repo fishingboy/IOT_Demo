@@ -7,8 +7,9 @@ class Log extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->load->database();
         $this->load->library("Api_lib");
-        $this->load->library("Logs_model");
+        $this->load->model('Logs_model');
     }
 
     public function write()
@@ -16,13 +17,19 @@ class Log extends CI_Controller
         $celsius = $this->api_lib->getParam('celsius', 'required');
         $humidity = $this->api_lib->getParam('humidity', 'required');
 
-        $id = $this->Logs_model->create([
+        try {
+            $this->Logs_model->create([
+                'celsius' => $celsius,
+                'humidity' => $humidity,
+            ]);
+        } catch (Exception $e) {
+            $this->api_lib->outputError($e->getMessage());
+        }
+
+        $this->api_lib->output([
+            "status" => true,
             'celsius' => $celsius,
             'humidity' => $humidity,
         ]);
-
-        if ( ! $id) {
-
-        }
     }
 }

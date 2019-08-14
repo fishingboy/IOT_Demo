@@ -808,7 +808,6 @@ class Api_lib
     public function curlPost($url, $data = [], & $http_status_code = null, & $response_body = null, $timeout = 600)
     {
         $url = trim($url);
-        $url = $this->convertApiUrl($url);
         $curl = curl_init($url);
         if (substr($url, 0, 5) == "https") {
             curl_setopt($curl, CURLOPT_PROTOCOLS, CURLPROTO_HTTPS);
@@ -864,7 +863,6 @@ class Api_lib
     public function curlJson($url, $data, & $http_status_code = null, & $response_body = null)
     {
         $url = trim($url);
-        $url = $this->convertApiUrl($url);
         $json = json_encode($data, JSON_UNESCAPED_UNICODE);
 
         $curl = curl_init($url);
