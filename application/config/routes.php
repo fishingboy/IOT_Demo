@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 if (defined("PHPUNIT_TEST")) {
     $route['default_controller'] = 'phpunit';
 } else {
-    $route['default_controller'] = 'home';
+    $route['default_controller'] = 'demo';
 }
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
