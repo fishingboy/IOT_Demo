@@ -76,8 +76,9 @@
  * @property CI_Javascript       $javascript           Javascript Class
  ***************** YOUR LIBRARIES *****************
  * @property Api_lib                $api_lib
+ * @property Log_serv               $log_serv
  ***************** YOUR MODELS *****************
- * @property Logs_model         $Logs_model
+ * @property Logs_model         $logs_model
  */
 class CI_Controller {
     public function __construct() {

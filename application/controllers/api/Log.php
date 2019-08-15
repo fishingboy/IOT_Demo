@@ -8,8 +8,9 @@ class Log extends CI_Controller
     {
         parent::__construct();
         $this->load->database();
-        $this->load->library("Api_lib");
-        $this->load->model('Logs_model');
+        $this->load->library("api_lib");
+        $this->load->library('log_serv');
+        $this->load->model('logs_model');
     }
 
     public function write()
@@ -18,7 +19,7 @@ class Log extends CI_Controller
         $humidity = $this->api_lib->getParam('humidity', 'required');
 
         try {
-            $this->Logs_model->create([
+            $this->logs_model->create([
                 'celsius' => $celsius,
                 'humidity' => $humidity,
             ]);
@@ -30,6 +31,21 @@ class Log extends CI_Controller
             "status" => true,
             'celsius' => $celsius,
             'humidity' => $humidity,
+        ]);
+    }
+
+    public function read()
+    {
+        $rows = [];
+        try {
+            $rows = $this->log_serv->get();
+        } catch (Exception $e) {
+            $this->api_lib->outputError($e->getMessage());
+        }
+
+        $this->api_lib->output([
+            "status" => true,
+            'rows' => $rows,
         ]);
     }
 }

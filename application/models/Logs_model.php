@@ -13,6 +13,14 @@ class Logs_model extends Model_base
      */
     protected $table = "logs";
 
+    public function get()
+    {
+        return $this->CI->db->from("logs")
+            ->limit(100)
+            ->order_by("id", "DESC")
+            ->get()->result_array();
+    }
+
     /**
      * 新增資料的驗證
      */

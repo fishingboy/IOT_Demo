@@ -10,7 +10,7 @@ class LogsModelTest extends CITestCase
     public function setUp()
     {
         $this->CI = & get_instance();
-        $this->CI->load->model('Logs_model');
+        $this->CI->load->model('logs_model');
 
         $this->humidity = 299;
         $this->celsius = -300;
@@ -23,7 +23,7 @@ class LogsModelTest extends CITestCase
 
     public function testExample()
     {
-        $id = $this->CI->Logs_model->create([
+        $id = $this->CI->logs_model->create([
             'humidity' => $this->humidity,
             'celsius' => $this->celsius,
         ]);
