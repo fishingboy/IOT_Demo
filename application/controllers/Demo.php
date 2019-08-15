@@ -6,10 +6,14 @@ class Demo extends CI_Controller
     {
         parent::__construct();
         $this->load->database();
+        $this->load->library("log_serv");
     }
 
     public function index()
     {
-        echo 1;
+        $rows = $this->log_serv->get();
+        $this->load->view("list", [
+            'rows' => $rows
+        ]);
     }
 }
