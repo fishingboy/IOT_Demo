@@ -91,8 +91,8 @@
         <?php foreach ($rows as $row): ?>
         <tr>
             <td><?= $row['created_at'] ?></td>
-            <td><?= $row['celsius'] ?></td>
-            <td><?= $row['humidity'] ?></td>
+            <td><?= number_format($row['celsius'], 2) ?>°C</td>
+            <td><?= number_format($row['humidity'], 2) ?>%</td>
         </tr>
         <?php endforeach; ?>
         </tbody>
