@@ -12,6 +12,17 @@ class Log_serv
     
     public function get()
     {
-        return $this->CI->logs_model->get();
+        $rows = $this->CI->logs_model->get();
+        $rows = $this->convertLogs($rows);
+        return $rows;
+    }
+
+    private function convertLogs($rows)
+    {
+        foreach ($rows as $i => $row) {
+            $timer = new DateTime($row['created_at']);
+            $rows[$i]['time'] = $timer->format("H:i:s");
+        }
+        return $rows;
     }
 }
