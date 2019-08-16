@@ -71,7 +71,7 @@
 <body>
 <h4>IOT DEMO</h4>
 <div class="table-responsive" style="margin: 0 auto;">
-    <br><h5>溫度濕度監控圖表</h5>
+    <br><h5>溫度濕度監控圖表(攝氏)</h5>
     <div >
         <div style="float: left; width: 49%;"><canvas id="celsius_chart"></canvas></div>
         <div style="float: right; width: 49%;"><canvas id="humidity_chart"></canvas></div>
