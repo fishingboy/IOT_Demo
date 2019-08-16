@@ -23,6 +23,12 @@ class Log_serv
             $timer = new DateTime($row['created_at']);
             $rows[$i]['time'] = $timer->format("H:i:s");
         }
+
+        // 反過來排
+        usort($rows, function ($a, $b) {
+            return $a <=> $b;
+        });
+
         return $rows;
     }
 }
