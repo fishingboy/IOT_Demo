@@ -16,7 +16,7 @@ class Logs_model extends Model_base
     public function get()
     {
         return $this->CI->db->from("logs")
-            ->limit(10)
+            ->limit(30)
             ->order_by("id", "DESC")
             ->get()->result_array();
     }
