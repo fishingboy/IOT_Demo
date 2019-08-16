@@ -36,8 +36,8 @@
                     labels: labels,
                     datasets: [{
                         label: '溫度監控圖表',
-                        backgroundColor: 'rgb(255, 99, 132)',
-                        borderColor: 'rgb(255, 99, 132)',
+                        backgroundColor: 'rgb(233, 242, 254)',
+                        borderColor: 'rgb(45, 130, 250)',
                         data: celsius_array
                     }]
                 },
@@ -56,8 +56,8 @@
                     labels: labels,
                     datasets: [{
                         label: '濕度監控圖表',
-                        backgroundColor: 'rgb(255, 99, 132)',
-                        borderColor: 'rgb(255, 99, 132)',
+                        backgroundColor: 'rgb(233, 242, 254)',
+                        borderColor: 'rgb(45, 130, 250)',
                         data: humidity_array
                     }]
                 },
