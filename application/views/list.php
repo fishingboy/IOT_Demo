@@ -43,7 +43,15 @@
                 },
 
                 // Configuration options go here
-                options: {}
+                options: {
+                    animation: {
+                        duration: 0 // general animation time
+                    },
+                    hover: {
+                        animationDuration: 0 // duration of animations when hovering an item
+                    },
+                    responsiveAnimationDuration: 0 // animation duration after a resize
+                }
             });
 
             var ctx2 = document.getElementById('humidity_chart').getContext('2d');
@@ -63,7 +71,15 @@
                 },
 
                 // Configuration options go here
-                options: {}
+                options: {
+                    animation: {
+                        duration: 0 // general animation time
+                    },
+                    hover: {
+                        animationDuration: 0 // duration of animations when hovering an item
+                    },
+                    responsiveAnimationDuration: 0 // animation duration after a resize
+                }
             });
         });
     </script>
