@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b12e2f1b9f2ede93df7d5db92a67f853",
+    "content-hash": "0d2cdb3fe5ec7fb98beec977473b23de",
     "packages": [
         {
             "name": "ezyang/htmlpurifier",
@@ -55,16 +55,16 @@
         },
         {
             "name": "fishingboy/codeigniter-seeder",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fishingboy/Codeigniter-Seeder.git",
-                "reference": "aa4c674e1104ba1c71a7d83381442519eb4923bb"
+                "reference": "48896efa8f551b1813c8471780e02da5b1903840"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fishingboy/Codeigniter-Seeder/zipball/aa4c674e1104ba1c71a7d83381442519eb4923bb",
-                "reference": "aa4c674e1104ba1c71a7d83381442519eb4923bb",
+                "url": "https://api.github.com/repos/fishingboy/Codeigniter-Seeder/zipball/48896efa8f551b1813c8471780e02da5b1903840",
+                "reference": "48896efa8f551b1813c8471780e02da5b1903840",
                 "shasum": ""
             },
             "type": "library",
@@ -81,7 +81,7 @@
                 }
             ],
             "description": "Codeigniter Seeder",
-            "time": "2019-08-25T06:42:13+00:00"
+            "time": "2019-08-25T06:59:31+00:00"
         },
         {
             "name": "fishingboy/external_sort",
@@ -178,8 +178,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fishingboy/external_sort": 20,
-        "fishingboy/codeigniter-seeder": 20
+        "fishingboy/external_sort": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
