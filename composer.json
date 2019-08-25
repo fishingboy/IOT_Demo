@@ -13,7 +13,9 @@
     "require": {
         "php": ">=7.1",
         "php-curl-class/php-curl-class": "^7.2",
-        "ezyang/htmlpurifier": "^4.10"
+        "ezyang/htmlpurifier": "^4.10",
+        "fishingboy/external_sort": "dev-master",
+        "fishingboy/codeigniter-seeder": "dev-master"
     },
     "suggest": {
         "paragonie/random_compat": "Provides better randomness in PHP 5.x"

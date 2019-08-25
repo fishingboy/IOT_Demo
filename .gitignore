@@ -14,3 +14,4 @@ vendor
 environment.php
 /composer.phar
 /application/tests/tmp/*
+.idea

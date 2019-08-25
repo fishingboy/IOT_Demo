@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8076d0acba15118e1b68e692afe440ca",
+    "content-hash": "b12e2f1b9f2ede93df7d5db92a67f853",
     "packages": [
         {
             "name": "ezyang/htmlpurifier",
@@ -52,6 +52,69 @@
                 "html"
             ],
             "time": "2019-07-14T18:58:38+00:00"
+        },
+        {
+            "name": "fishingboy/codeigniter-seeder",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fishingboy/Codeigniter-Seeder.git",
+                "reference": "aa4c674e1104ba1c71a7d83381442519eb4923bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fishingboy/Codeigniter-Seeder/zipball/aa4c674e1104ba1c71a7d83381442519eb4923bb",
+                "reference": "aa4c674e1104ba1c71a7d83381442519eb4923bb",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "fishingboy\\ci_seeder\\": "/src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "fishingboy",
+                    "email": "et282523@hotmail.com"
+                }
+            ],
+            "description": "Codeigniter Seeder",
+            "time": "2019-08-25T06:42:13+00:00"
+        },
+        {
+            "name": "fishingboy/external_sort",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fishingboy/ExternalSort.git",
+                "reference": "94a9e8bc08c1192cc929c240cb6f2762c66653a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fishingboy/ExternalSort/zipball/94a9e8bc08c1192cc929c240cb6f2762c66653a5",
+                "reference": "94a9e8bc08c1192cc929c240cb6f2762c66653a5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "fishingboy\\external_sort\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "fishingboy",
+                    "email": "et282523@hotmail.com"
+                }
+            ],
+            "description": "external sort PHP library",
+            "time": "2017-04-08T05:32:53+00:00"
         },
         {
             "name": "php-curl-class/php-curl-class",
@@ -114,7 +177,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "fishingboy/external_sort": 20,
+        "fishingboy/codeigniter-seeder": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
