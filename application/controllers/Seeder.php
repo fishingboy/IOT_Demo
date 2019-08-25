@@ -1,4 +1,6 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
+
+use fishingboy\ci_seeder\CI_Seeder_Controller;
 
 /**
  * Seeder
