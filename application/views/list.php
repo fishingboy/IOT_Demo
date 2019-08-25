@@ -14,7 +14,7 @@
             window.location.reload();
         }, 5000);
 
-        var rows = <?= json_encode($rows) ?>;
+        var rows = <?= json_encode($chart_rows) ?>;
         var labels = [];
         var celsius_array = [];
         var humidity_array = [];
