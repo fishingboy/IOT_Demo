@@ -15,7 +15,8 @@
         "php-curl-class/php-curl-class": "^7.2",
         "ezyang/htmlpurifier": "^4.10",
         "fishingboy/codeigniter-seeder": "^1.0.0",
-        "fishingboy/external_sort": "dev-master"
+        "fishingboy/external_sort": "dev-master",
+        "fishingboy/codeigniter-migration": "^1.0.0"
     },
     "suggest": {
         "paragonie/random_compat": "Provides better randomness in PHP 5.x"
