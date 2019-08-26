@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "47933787c6bc1fe6652e94b53cfe1780",
@@ -55,16 +55,16 @@
         },
         {
             "name": "fishingboy/codeigniter-migration",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fishingboy/Codeigniter-Migration.git",
-                "reference": "ccad08089bb12613b3741efab5a8d249468bfb3b"
+                "reference": "4ed4f9cfc9e1696d9615a518830cf2c76546d760"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fishingboy/Codeigniter-Migration/zipball/ccad08089bb12613b3741efab5a8d249468bfb3b",
-                "reference": "ccad08089bb12613b3741efab5a8d249468bfb3b",
+                "url": "https://api.github.com/repos/fishingboy/Codeigniter-Migration/zipball/4ed4f9cfc9e1696d9615a518830cf2c76546d760",
+                "reference": "4ed4f9cfc9e1696d9615a518830cf2c76546d760",
                 "shasum": ""
             },
             "type": "library",
@@ -84,20 +84,20 @@
                 }
             ],
             "description": "Codeigniter Migration",
-            "time": "2019-08-25T11:47:55+00:00"
+            "time": "2019-08-25T16:34:54+00:00"
         },
         {
             "name": "fishingboy/codeigniter-seeder",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fishingboy/Codeigniter-Seeder.git",
-                "reference": "a1fa430ff3b21c0832f77e5248d72a81a3646c7a"
+                "reference": "b6ff8fd377793984875371d1d2b0bda2f950baea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fishingboy/Codeigniter-Seeder/zipball/a1fa430ff3b21c0832f77e5248d72a81a3646c7a",
-                "reference": "a1fa430ff3b21c0832f77e5248d72a81a3646c7a",
+                "url": "https://api.github.com/repos/fishingboy/Codeigniter-Seeder/zipball/b6ff8fd377793984875371d1d2b0bda2f950baea",
+                "reference": "b6ff8fd377793984875371d1d2b0bda2f950baea",
                 "shasum": ""
             },
             "type": "library",
@@ -117,7 +117,7 @@
                 }
             ],
             "description": "Codeigniter Seeder",
-            "time": "2019-08-25T09:16:08+00:00"
+            "time": "2019-08-25T16:36:24+00:00"
         },
         {
             "name": "fishingboy/external_sort",
@@ -125,12 +125,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fishingboy/ExternalSort.git",
-                "reference": "94a9e8bc08c1192cc929c240cb6f2762c66653a5"
+                "reference": "095b977cf155a906e04afb50d30b85b5dfee2a8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fishingboy/ExternalSort/zipball/94a9e8bc08c1192cc929c240cb6f2762c66653a5",
-                "reference": "94a9e8bc08c1192cc929c240cb6f2762c66653a5",
+                "url": "https://api.github.com/repos/fishingboy/ExternalSort/zipball/095b977cf155a906e04afb50d30b85b5dfee2a8d",
+                "reference": "095b977cf155a906e04afb50d30b85b5dfee2a8d",
                 "shasum": ""
             },
             "require": {
@@ -150,7 +150,7 @@
                 }
             ],
             "description": "external sort PHP library",
-            "time": "2017-04-08T05:32:53+00:00"
+            "time": "2019-08-25T14:19:45+00:00"
         },
         {
             "name": "php-curl-class/php-curl-class",
