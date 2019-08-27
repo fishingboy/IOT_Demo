@@ -77,6 +77,7 @@
  ***************** YOUR LIBRARIES *****************
  * @property Api_lib                $api_lib
  * @property Log_serv               $log_serv
+ * @property Github_serv            $github_serv
  ***************** YOUR MODELS *****************
  * @property Logs_model         $logs_model
  */
