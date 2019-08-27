@@ -1,11 +1,13 @@
 <?php
 
+use fishingboy\ci_model_base\CI_Model_base;
+
 include_once (__DIR__ . "/Model_base.php");
 
 /**
  * Model 的基礎類別
  */
-class Logs_model extends Model_base
+class Logs_model extends CI_Model_base
 {
     /**
      * 資料表

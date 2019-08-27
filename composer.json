@@ -16,7 +16,8 @@
         "ezyang/htmlpurifier": "^4.10",
         "fishingboy/codeigniter-seeder": "^1.0.0",
         "fishingboy/external_sort": "dev-master",
-        "fishingboy/codeigniter-migration": "^1.0.0"
+        "fishingboy/codeigniter-migration": "^1.0.0",
+        "fishingboy/codeigniter-model-base": "^1.0.0"
     },
     "suggest": {
         "paragonie/random_compat": "Provides better randomness in PHP 5.x"

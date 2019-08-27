@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47933787c6bc1fe6652e94b53cfe1780",
+    "content-hash": "6407edc4a81c6184252ba37165078b84",
     "packages": [
         {
             "name": "ezyang/htmlpurifier",
@@ -55,16 +55,16 @@
         },
         {
             "name": "fishingboy/codeigniter-migration",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fishingboy/Codeigniter-Migration.git",
-                "reference": "4ed4f9cfc9e1696d9615a518830cf2c76546d760"
+                "reference": "af7429c8dbc1640a97c68aa891125ff1dfe92833"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fishingboy/Codeigniter-Migration/zipball/4ed4f9cfc9e1696d9615a518830cf2c76546d760",
-                "reference": "4ed4f9cfc9e1696d9615a518830cf2c76546d760",
+                "url": "https://api.github.com/repos/fishingboy/Codeigniter-Migration/zipball/af7429c8dbc1640a97c68aa891125ff1dfe92833",
+                "reference": "af7429c8dbc1640a97c68aa891125ff1dfe92833",
                 "shasum": ""
             },
             "type": "library",
@@ -84,20 +84,57 @@
                 }
             ],
             "description": "Codeigniter Migration",
-            "time": "2019-08-25T16:34:54+00:00"
+            "time": "2019-08-27T01:59:27+00:00"
         },
         {
-            "name": "fishingboy/codeigniter-seeder",
-            "version": "1.0.5",
+            "name": "fishingboy/codeigniter-model-base",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fishingboy/Codeigniter-Seeder.git",
-                "reference": "b6ff8fd377793984875371d1d2b0bda2f950baea"
+                "url": "https://github.com/fishingboy/Codeigniter-Model-Base.git",
+                "reference": "6319157c8f9af17447232b40ec854511fa244c5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fishingboy/Codeigniter-Seeder/zipball/b6ff8fd377793984875371d1d2b0bda2f950baea",
-                "reference": "b6ff8fd377793984875371d1d2b0bda2f950baea",
+                "url": "https://api.github.com/repos/fishingboy/Codeigniter-Model-Base/zipball/6319157c8f9af17447232b40ec854511fa244c5a",
+                "reference": "6319157c8f9af17447232b40ec854511fa244c5a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "fishingboy\\ci_model_base\\": "/src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "fishingboy",
+                    "email": "et282523@hotmail.com"
+                }
+            ],
+            "description": "Codeigniter Model Base",
+            "keywords": [
+                "codeigniter",
+                "model"
+            ],
+            "time": "2019-08-27T10:22:58+00:00"
+        },
+        {
+            "name": "fishingboy/codeigniter-seeder",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fishingboy/Codeigniter-Seeder.git",
+                "reference": "b9dde95e4560237e291e11f99eeb1817d23962d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fishingboy/Codeigniter-Seeder/zipball/b9dde95e4560237e291e11f99eeb1817d23962d2",
+                "reference": "b9dde95e4560237e291e11f99eeb1817d23962d2",
                 "shasum": ""
             },
             "type": "library",
@@ -117,7 +154,7 @@
                 }
             ],
             "description": "Codeigniter Seeder",
-            "time": "2019-08-25T16:36:24+00:00"
+            "time": "2019-08-26T18:19:17+00:00"
         },
         {
             "name": "fishingboy/external_sort",
