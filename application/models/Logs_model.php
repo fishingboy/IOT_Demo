@@ -2,8 +2,6 @@
 
 use fishingboy\ci_model_base\CI_Model_base;
 
-include_once (__DIR__ . "/Model_base.php");
-
 /**
  * Model 的基礎類別
  */

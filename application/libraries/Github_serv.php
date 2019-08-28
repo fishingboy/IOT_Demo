@@ -12,9 +12,9 @@ class Github_serv
         $this->CI->load->model("logs_model");
     }
     
-    public function getStar()
+    public function getStar($user = "fishingboy")
     {
-        $api_url = "https://api.github.com/users/fishingboy/repos";
+        $api_url = "https://api.github.com/users/$user/repos";
 
         $curl = new Curl();
         $repositories = $curl->get($api_url);

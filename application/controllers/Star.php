@@ -9,9 +9,9 @@ class Star extends CI_Controller
         $this->load->library("github_serv");
     }
 
-    public function index()
+    public function index($user = "fishingboy")
     {
-        $data = $this->github_serv->getStar();
+        $data = $this->github_serv->getStar($user);
 
         $this->load->view("star", [
             'data' => $data,
