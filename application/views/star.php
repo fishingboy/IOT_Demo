@@ -13,7 +13,7 @@
 <body>
 <div style="width:200px; margin: 0 auto;">
     <div class="card text-white bg-info mb-3" style="max-width: 18rem; margin-top: calc((100vh - 185px)/2)">
-        <div class="card-header">fishingboy Github</div>
+        <div class="card-header"><?= $user ?>'s Github</div>
         <div class="card-body">
             <h5 class="card-title">Total Star</h5>
             <p class="card-text" style="text-align: center; color: yellow; font-size: 40px;"><?= $data['total_star'] ?></p>

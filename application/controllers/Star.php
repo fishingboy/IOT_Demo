@@ -14,6 +14,7 @@ class Star extends CI_Controller
         $data = $this->github_serv->getStar($user);
 
         $this->load->view("star", [
+            'user' => $user,
             'data' => $data,
         ]);
     }
